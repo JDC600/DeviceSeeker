@@ -2,7 +2,7 @@ from re import search
 import subprocess, sys
 
 
-PSscript = "D:\Todo\Programas\Xampp\htdocs\Informática\Programación\Python\DeviceSeeker\ips.ps1"
+PSscript = "./ips.ps1"
 
 PSprocess = subprocess.Popen(["powershell.exe", PSscript], stdout = sys.stdout)
 
@@ -20,7 +20,7 @@ linesManuf = manuf.readlines()
 with open("IPs.txt") as IPsFile: 
 
     linesIPs = [ lineIPs.rstrip() for lineIPs in IPsFile ]
-    
+
 def nested_list_contains(linesManuf, target):
     for lineManuf in linesManuf:
         if target in lineManuf:
