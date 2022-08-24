@@ -25,6 +25,6 @@ def nested_list_contains(linesManuf, target):
     for lineManuf in linesManuf:
         if target in lineManuf:
             return lineManuf
-    return "No encontrado"
+    return "Not found"
 for i in range(len(linesMACs)):
     print(linesIPs[i] + ":",nested_list_contains(linesManuf, linesMACs[i]))  # True
