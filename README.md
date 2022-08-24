@@ -1,5 +1,7 @@
 # DeviceSeeker
 
+Works in Windows only. Will work in other platforms.
+
 Scan devices that you have in your network.
 
 
